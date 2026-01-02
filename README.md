@@ -5,16 +5,14 @@ Feel free to browse the code to see how different pages and effects are implemen
 
 ## Contact & Takedown Requests
 
-If you need something removed from the site that you own, please **email me** using the address listed on the "About Me" page of the site.  
-Only use the GitHub Issues section if you do not have access to email.
+If you need something removed from the site that you own, please **email me** using the address listed on the "About Me" page of the site. Only use the GitHub Issues section if you do not have access to email.
 
-When making a takedown request, please provide reasonable evidence to support your claim.  
-For content linked via the Wayback Machine, please note that I likely will not remove it—such requests are better directed to the Internet Archive.
+When making a takedown request, please provide reasonable evidence to support your claim. For content linked via the Wayback Machine, please note that I likely will not remove it—such requests are better directed to the Internet Archive.
 
 ## License
 
-This project is for personal and educational purposes.  
-If you wish to reuse or adapt any part of the code, please credit the original sources where applicable.
+This project is for personal and educational purposes. If you wish to reuse or adapt any part of the code, please credit the original sources where applicable.
 
 ---
+
 
