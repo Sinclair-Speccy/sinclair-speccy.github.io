@@ -2,7 +2,7 @@
 
 This repository contains the source code for my personal website: [The Mainframe](https://sinclair-speccy.github.io/).  
 
-Feel free to browse the code to see how different pages and effects are implemented, such as the CRT effect on the "About Me" page (which uses modified code). Other content and updates may be added here from time to time.
+Feel free to browse the code to see how different pages and effects are implemented. Other content and updates may be added here from time to time.
 
 ## Contact & Takedown Requests
 
