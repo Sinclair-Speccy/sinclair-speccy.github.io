@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  background-image: url("https://background-tiles.com/overview/yellow/textures/small/5011.png");
+  background-repeat: repeat;
+}
+
+#topBar {
+  margin: auto;
+  width: 50%;
+  height: 30px;
+  padding: 10px;
+  font-size: 30px;
+  background-color: #753f15;
+  text-align: center;
+  color: aliceblue;
+}
+
+#MiddleBar1 {
+  margin: auto;
+  width: 50%;
+  height: 30px;
+  padding: 10px;
+  font-size: 30px;
+  background-color: #753f15;
+  text-align: center;
+  color: aliceblue;
+}
+
+#MiddleBar2 {
+  margin: auto;
+  width: 50%;
+  height: 30px;
+  padding: 10px;
+  font-size: 30px;
+  background-color: #753f15;
+  text-align: center;
+  color: aliceblue;
+}
