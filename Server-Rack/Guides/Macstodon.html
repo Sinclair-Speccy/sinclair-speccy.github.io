@@ -1,70 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta name="generator" content=
-  "HTML Tidy for HTML5 for Linux version 5.8.0">
-  <meta charset="UTF-8">
-  <meta name="viewport" content=
-  "width=device-width, initial-scale=1.0">
-  <title>Running Macstodon (and some other small things)</title>
-  <link rel="stylesheet" href="ServerRack.css">
-  <link rel="shortcut icon" type="image/x-icon" href=
-  "https://raw.githubusercontent.com/Sinclair-Speccy/The-Mainframe/main/Images/Icons/Supercomputer.ico">
-</head>
-<body>
-  <div class="body-wrapper">
-    <header>
-      <h1 class="title text-centre">Server Rack</h1>
-      <nav role="navigation">
-        <ul>
-          <li>
-            <a href=
-            "https://sinclair-speccy.github.io/index.html"
-            title="Back to The Mainframe">Back to The Mainframe</a>
-          </li>
-          <li>
-            <a href=
-            "https://sinclair-speccy.github.io/Server-Rack/index.html"
-            title="Back to The Mainframe">Back to the Server
-            Rack</a>
-          </li>
-          <li>
-            <a href=
-            "https://sinclair-speccy.github.io/Server-Rack/Reviews/Reviews.html"
-            title="Reviews">Reviews</a>
-          </li>
-          <li>
-            <a href=
-            "https://sinclair-speccy.github.io/Server-Rack/Guides/Guides.html"
-            title="Guides">Guides</a>
-          </li>
-          <li>
-            <a href=
-            "https://sinclair-speccy.github.io/Server-Rack/Useful-Tech-Links.html"
-            title="Useful tech links">Useful Tech Links</a>
-          </li>
-          <li>
-            <a href=
-            "https://sinclair-speccy.github.io/Server-Rack/Other-Nerdy-Stuff"
-            title="Other Nerdy Stuff">Other Nerdy Stuff</a>
-          </li>
-          <li>
-            <a href=
-            "https://sinclair-speccy.github.io/Server-Rack/Tech-Deck/index.html"
-            title="Tech Deck">Tech Deck</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-        <article>
+<html>
+  <head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Macstodon</title>
+    <meta name="google-site-verification" content=
+  "-hST8u3afrLE7Mm_anfj_2rQFueREWnNWu8JQzrdUtc">
+    <link href="../../Main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../Style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    
+    <div class=wrapper>
+  
+    <div class=sidebar>
+    <div class="sidebar-image"><div class=inner><img src="../Images/Server-Rack-Icon.png"></div></div>
+    <div class=box><div class=inner><p><strong>Quick social links</strong></p>      
+  ★ <a rel="me" href="https://oldbytes.space/@SinclairSpeccy">Mastodon</a><br>
+  ★ <a href="https://www.reddit.com/user/WindowsME04">Reddit</a>
+<p><strong>Random computing quote</strong></p>
+
+<blockquote class="sidebar-quote">
+  “Every operating system out there is about equal… We all suck.”
+  <footer>— Brian Valentine, Microsoft Senior Vice President, 2003</footer>
+</blockquote>
+        
+        <p><strong>This site was last updated:</strong></p>
+        <p id="lastUpdated">Loading...</p>
+        <p>View on GitHub: <a href=
+        "https://github.com/Sinclair-Speccy/sinclair-speccy.github.io" target=
+        "_blank">Sinclair-Speccy/The-Mainframe</a></p>
+        <script src="../../script.js"></script>
+        
+        <p><a href=
+        "../../Credits.html" target=
+        "_blank"><strong>Credits</strong></a></p>
+                
+        </div></div>
+    </div>
+    
+    <div class=main-wrapper> 
+    
+<div class="title">
+  <div class="box">
+    <div class="inner">
+      <h2>
+        <img src="../Images/Server-Rack.png" alt="The Mainframe" class="title-img">
+      </h2>
+    </div>
+  </div>
+</div>
+
+    
+<div class="links">
+  <div class="box">
+    <div class="inner">
+      <ul>
+        <li><a href="../Server-Index.html" title="Home">Back to The Mainframe</a></li>
+
+        <li><a href="Guide-Index.html"
+               title="Back to The Server
+            Rack Index">Back to The Server
+            Rack Index</a></li>
+
+        <li><a href="../Reviews/Reviews-Index.html"
+               title="Reviews">Reviews</a></li>
+
+        <li><a href="Guide-Index.html"
+               title="Guides">Guides</a></li>
+          
+                  <li><a href="../Useful-Tech-Links.html"
+               title="Tech Links">Tech Links</a></li>
+          
+                  <li><a href="../Tech-Deck/Tech-Menu.html"
+               title="Tech Deck">Tech Deck</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+      
+      <div class="main single-column">
+      <div class=box><div class=inner>  
             <h1 class="title">Important!!</h1>
-<p style="color: red; font-weight: bold; font-size: 1.1em;">
+<p>
 This guide is relevant to version 0.3 of Macstodon. It <em>should</em> work for the newer versions but I have not tried, nor do I intend on updating this as it is messy as hell and a very inconvenient way of even getting online anyway... I'm only keeping it up for the sake of myself :P
 </p>
-
-    </article>
-      <article>
         <h1 class="title">Running Macstodon (and some other small
         things)</h1>
         <p>Another guide after so long? Of course! This one is
@@ -90,8 +111,6 @@ This guide is relevant to version 0.3 of Macstodon. It <em>should</em> work for 
         <p>As for me, this may have been rushed so feel free to
         message me on Mastodon or anywhere else for suggestions.
         This guide is a bit long too so sorry for that ^^;;</p>
-      </article>
-      <article>
         <h1 class="title">Prerequisites</h1>
         <p>Before doing anything you will need some files first
         which are listed below:</p>
@@ -108,8 +127,6 @@ This guide is relevant to version 0.3 of Macstodon. It <em>should</em> work for 
         <p>The other sections of this guide lists where to get
         these files from however if want to get them now you can do
         so. Now to get the prerequisites working</p>
-      </article>
-      <article>
         <h1 class="title">Macintosh System 7.6.1 App</h1>
         <h2><u>Installing MacSys761</u></h2>
         <p>How does one run Macstodon without System 7? You need an
@@ -161,8 +178,6 @@ This guide is relevant to version 0.3 of Macstodon. It <em>should</em> work for 
         guide we won’t be doing that.</p><img src=
         "../Images/Images-for-pages/Guides/Macstodon/Sys7App/Sys7%20Desktop.PNG"
         alt="Basilisk II running." class="responsive">
-      </article>
-      <article>
         <h1 class="title">iCab</h1>
         <p>You will need to grab a copy iCab 2.9.9 from emaculation
         forums <a href=
@@ -183,8 +198,6 @@ This guide is relevant to version 0.3 of Macstodon. It <em>should</em> work for 
         "../Images/Images-for-pages/Guides/Macstodon/iCab/iCab%20folder.PNG"
         alt="Contents of the iCab sit file after extracting it."
         class="responsive">
-      </article>
-      <article>
         <h1 class="title">WebOne</h1>
         <p>To get iCab to access the internet you’ll need to
         download WebOne from <a href=
@@ -278,8 +291,6 @@ This guide is relevant to version 0.3 of Macstodon. It <em>should</em> work for 
         alt=
         "WebOne config with the host name set to the default option."
         class="responsive">
-      </article>
-      <article>
         <h1 class="title">Internet Config</h1>
         <p>Internet Config is needed to add the WebOne proxy to
         System 7 and to test the proxy is working on iCab. You can
@@ -304,8 +315,6 @@ This guide is relevant to version 0.3 of Macstodon. It <em>should</em> work for 
         "responsive"><source src=
         "../Videos/Macstodon/Internet%20Config/b0uINJYVBv.webm"
         type="video/webm" preload="metadata"></video>
-      </article>
-      <article>
         <h1 class="title">Macstodon</h1>
         <h2><u>Getting Macstodon</u></h2>
         <p>From the github repo,
@@ -398,8 +407,6 @@ This guide is relevant to version 0.3 of Macstodon. It <em>should</em> work for 
         <p>If you ever restart the machine and load Macstodon up
         again, leave it some time to load everything as it will
         look like it has hung, but it has not.</p>
-      </article>
-      <article>
         <h1 class="title">FAQ</h1>
         <h3>Does Macstodon work on places like system7.app?</h3>
         <p>Answer? No, it doesn't. It can't access servers on your
@@ -426,29 +433,17 @@ This guide is relevant to version 0.3 of Macstodon. It <em>should</em> work for 
         to this which can be found <a href=
         "https://web.archive.org/web/20230124195351/https://gist.github.com/75mhzMac/479d0dea70bd91a6d62164164d0463e4">
         here.</a></p>
-      </article>
-    </main>
-    <aside>
-      <article>
-        <h3 class="title">Yo, can I link back to your site?</h3>
-        <p>Sure! Just use the code below!</p>
-        <p>&lt;a
-        href="https://sinclair-speccy.github.io/index.html"
-        target="_blank"&gt; &lt;img
-        src="https://raw.githubusercontent.com/Sinclair-Speccy/The-Mainframe/main/Images/Buttons/The-Mainframe-Button.png"
-        width="88" height="31"&lt;&gt;</p>
-        <p><a href=
-        "https://sinclair-speccy.github.io/index.html"
-        target="_blank"><img src=
-        "https://raw.githubusercontent.com/Sinclair-Speccy/The-Mainframe/main/Images/Buttons/The-Mainframe-Button.png"
-        width="88" height="31"></a></p>
-      </article>
-    </aside>
-    <footer>
-      <h3 class="title">Site template goes to <a href=
-      "https://codepen.io/Puika/pen/dyJKGL">Fabian</a> because I
-      can't code CSS for heck</h3>
-    </footer>
-  </div>
-</body>
+          </li>
+        </ul>
+                   </div></div>
+      </div>
+    </div>
+      
+    <div class=footer>
+      <div class=box><div class=inner>Base stylesheet & skin by EGGRAMEN - 2021. Actual site content by Sinclair-Speccy - 2026</div></div>
+    </div>
+    
+    </div>
+    
+  </body>
 </html>

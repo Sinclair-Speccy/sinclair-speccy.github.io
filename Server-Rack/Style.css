@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Science Gothic";
+  src: url("../Files/Fonts/ScienceGothic-VariableFont_CTRS,slnt,wdth,wght.ttf");
+}
+
+body {
+  background: url("Background.png") repeat;
+  color: #020202;
+  font-family: sans-serif;
+  font-size: 0.85em;
+}
+
+a {
+  color: #FF8600;
+}
+
+.title {
+  font-family: "Fjalla One";
+  font-size: 1.2em;
+}
+
+.wrapper {
+  margin-top: 30px;
+  width: 1200px;
+}
+
+.sidebar-img, .footer, .title, .links, .box {
+  margin-top: 15px;
+}
+
+.main {
+  column-gap: 15px;
+}
+
+.main-wrapper {
+  margin-left: 215px;
+}
+
+.footer {
+  margin-bottom: 15px;
+}
+
+.links {
+  top: 0;
+  margin-top: 0;
+}
+
+.box,
+.sidebar-image {
+  border: 1px solid #2d305b;
+  border-radius: 0.5em;
+  background: #FFEEA9;
+}
+
+.sidebar-image {
+  width: 140px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  margin-top: 25px;
+  overflow: hidden;
+  display: block;
+}
+
+.sidebar-image .inner {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.links li:before {
+  content: "《 ";
+}
+
+.links li:after,
+.links .last:after {
+  content: " 》";
+}
+
+.links li {
+  margin: 0 0.275em;
+}
+
+@media (max-width:1215px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .main-wrapper {
+    width: calc(100% - 225px);
+  }
+}
+
+@media (orientation: portrait), (max-width:800px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .main-wrapper, .sidebar, .footer {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .sidebar {
+    float: none;
+    display: block;
+  }
+
+  .sidebar-image {
+    width: 33%;
+    max-width: 140px;
+    aspect-ratio: 1 / 1;
+    margin: 25px auto 0;
+  }
+
+  .footer {
+    margin-bottom: 25px;
+  }
+}
+
+.title-img {
+  height: 32px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.sidebar-quote {
+  padding: 10px 12px;
+  margin: 10px;
+  background: #FFEEA9; 
+  font-style: italic;
+  font-size: 0.85em;
+  line-height: 1.35em; 
+  word-wrap: break-word;
+  border-radius: 0.5em;
+}
+
+.sidebar-quote footer {
+  margin-top: 6px;
+  font-size: 0.75em;
+  font-style: normal;
+  color: #2d305b;
+  text-align: right;
+}
+
+video.responsive {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+

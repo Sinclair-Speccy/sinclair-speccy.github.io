@@ -1,92 +1,143 @@
 body {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
-    "DejaVu Sans", Verdana, "sans-serif" sans;
-  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
-  color: #000000;
-  background: #4480b4;
-}
-
-.text-centre {
-  text-align: center;
-}
-
-.body-wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.picheader {
-  height: 250px;
-  overflow: hidden;
-}
-
-header nav {
-  background: #c66373;
-  color: #fff;
-  border: solid 1px #c66373;
-  overflow: hidden;
-  padding: 10px auto;
-}
-
-header nav ul {
-  list-style: none;
-  overflow: hidden;
-}
-
-header nav ul li {
-  float: left;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-header nav ul li a {
-  color: #000000;
-  font-size: 1.2em;
-}
-
-article {
-  margin: 5px;
-  padding: 5px 0;
-  border: solid 1px #633139;
-  overflow: hidden;
-  padding-top: 0px;
-  background: #fff;
-}
-
-.title {
-  background: #c66373;
-  color: #000000;
-  padding: 5px;
-  padding-left: 10px;
-  overflow: hidden;
   margin: 0;
-  font-weight: bolder;
-}
+  }
+  
+/*Everything goes inside here.*/
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+  }
+  
+.sidebar-img, .footer, .title, .links, .box {
+  margin-top: 25px;
+  }
+  
+.title, .links, .footer {
+  text-align: center;
+  }
+  
+/*Navigation links.*/
+.links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+.links li {
+  display: inline-block;
+  }
 
-article p,
-article h1,
-article h2,
-article h3,
-article h4 {
-  padding: 0 15px;
-}
-
-main {
-  float: left;
-  max-width: 68%;
-}
-
-aside {
-  float: right;
-  max-width: 32%;
-}
-
-footer {
-  width: 100%;
-  float: left;
-}
-
-.responsive {
-  width: 100%;
+/*Some fancy code for fun, to add special characters around the navigation links. Change content to "" if you don't want these.*/
+.links li:before {
+  content: "ã€Œ";
+  }
+  
+.links li:after {
+  content: "ã€ âˆ· ";
+  }
+  
+.links .last:after {
+  content: "ã€";
+  }
+  
+.links li:before, .links li:after {
+  letter-spacing: 0.1em;
+  }
+  
+/*Basic box code that is used for all content boxes on the page.*/
+.box {
+  border: 1px solid black;
+  padding: 0.5em 1em;
+  }
+  
+/*Goes inside the box class. Not given any style by default, but can be used for stuff like fancy borders.*/
+.inner {
+  
+  }
+  
+/*Prevent image overflow.*/
+.box img, .sidebar img {
+  max-width: 100%;
   height: auto;
-}
+  }
+  
+/*Wrapper for the sidebar.*/
+.sidebar {
+  width: 200px;
+  float: left;
+  }
+  
+/*Container for the sidebar image.*/
+.sidebar-image {
+  border: 1px solid black;
+  }
+  
+/*Remove extra padding line at the bottom of the image.*/
+.sidebar-image img {
+  display: block;
+  }
+  
+/*This is where the title, navbar, and main content all go.*/
+.main-wrapper {
+  margin-left: 225px;
+  }
+  
+/*Two columns by default. The "single-column" class can be added to make it one column.*/
+.main {
+  columns: 2;
+  column-gap: 25px;
+  }
+  
+/*Make sure boxes don't spread over multiple columns.*/
+.main .box {
+  display: inline-block;
+  }
+  
+.single-column {
+  columns: 1;
+  }
+  
+.footer {
+  margin-bottom: 25px;
+  }
+  
+@media(max-width:915px) {
+  .wrapper {    
+    width: 95%;
+    }
+    
+  .main-wrapper {
+    width: calc(100% - 225px);
+    }
+  }
+  
+@media (orientation: portrait), (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+    }
+  
+  .main-wrapper, .sidebar, .footer {
+    margin: 0 auto;
+    width: 90%;
+    }
+  
+  .sidebar {
+    float: none;
+    display: block;
+    }
+
+  .sidebar-image {
+    margin: 0 auto;
+    width: 33%;
+    margin-top:25px;
+    }
+
+  .sidebar .sidebar-image img {
+    width: 100%;
+    }
+    
+  .footer {
+    margin-bottom: 25px;
+    }
+  
+  }
