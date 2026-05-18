@@ -1,6 +1,6 @@
 # Migration Notice
 
-The site and all repositories previously hosted here have moved.
+The site and all repositories previously hosted here have moved elsewhere
 
 - **Website:** https://themainframe.net/
 - **Repositories:** https://codeberg.org/Sinclair-Speccy
